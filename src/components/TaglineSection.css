@@ -1,0 +1,50 @@
+.tagline-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #8b1d24, #1c4c2d);
+  color: #fff;
+}
+
+.tagline-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.tagline-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #f3f3f3;
+}
+
+.tagline-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tagline-images img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tagline-images img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .tagline-title {
+    font-size: 2rem;
+  }
+  .tagline-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tagline-images img {
+    width: 90%;
+  }
+}

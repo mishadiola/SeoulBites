@@ -1,0 +1,69 @@
+.history-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.history-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e94e1b;
+  margin-bottom: 20px;
+}
+
+.history-header p {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2d4a22;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.history-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.daebak-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8b1d1d;
+  color: #f8d23c;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  height: 250px;
+}
+
+@media (max-width: 900px) {
+  .history-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-header h2 {
+    font-size: 2rem;
+  }
+
+  .history-header p {
+    font-size: 1rem;
+  }
+}

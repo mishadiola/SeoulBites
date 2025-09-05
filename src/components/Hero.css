@@ -1,0 +1,99 @@
+.sb-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 44px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.sb-hero-content {
+  flex: 1;
+}
+
+.sb-hero-carousel {
+  flex: 1;
+}
+
+.sb-hero-content .tagline {
+  color: #334400;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sb-hero-content h1 {
+  color: #882222;
+  font-weight: 800;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.05;
+  margin: 8px 0 22px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #004304;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #00a408;
+}
+
+.orange-card {
+  position: relative;
+  background: #334400;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hero-label {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #570101;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 12px;
+}
+
+.sb-hero-carousel .slick-prev,
+.sb-hero-carousel .slick-next {
+  width: 48px;
+  height: 48px;
+  z-index: 2;
+  background: #ffd151;
+  border-radius: 999px;
+}
+
+.sb-hero-carousel .slick-prev:before,
+.sb-hero-carousel .slick-next:before {
+  color: #fff;
+  opacity: 1;
+  font-size: 22px;
+}
+
+.sb-hero-carousel .slick-prev {
+  left: -6px;
+}
+
+.sb-hero-carousel .slick-next {
+  right: -6px;
+}
