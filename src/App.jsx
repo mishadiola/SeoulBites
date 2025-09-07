@@ -37,7 +37,7 @@ export default function App() {
       <Routes>
         {}
         <Route
-          path="/SeoulBites/"
+          path="/"
           element={
             <>
               <Hero />
@@ -52,7 +52,7 @@ export default function App() {
 
         {}
         <Route
-          path="/SeoulBites/menu/"
+          path="/menu"
           element={
             <main style={{ padding: "40px 20px" }}>
               <Menu onAddToCart={handleAddToCart} />
@@ -62,13 +62,13 @@ export default function App() {
 
         {}
         <Route
-          path="/SeoulBites/cart/"
+          path="/cart"
           element={<Cart cartItems={cartItems} setCartItems={setCartItems} />}
         />
 
         {}
         <Route
-          path="/SeoulBites/contact/"
+          path="/contact"
           element={
             <main style={{ padding: "40px 20px" }}>
               <Contact />
@@ -78,7 +78,7 @@ export default function App() {
 
         {}
         <Route
-          path="/SeoulBites/blog/"
+          path="/blog"
           element={
             <main style={{ padding: "40px 20px" }}>
               <Blog />

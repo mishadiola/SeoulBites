@@ -26,14 +26,14 @@ export default function Navbar({ cartCount = 0 }) {
             Home
           </NavLink>
           <NavLink
-            to="/SeoulBites/menu/"
+            to="/menu"
             className={({ isActive }) => (isActive ? "active" : "")}
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Menu
           </NavLink>
           <NavLink
-            to="/SeoulBites/contact/"
+            to="/contact"
             className={({ isActive }) => (isActive ? "active" : "")}
             onClick={() => setIsMobileMenuOpen(false)}
           >
